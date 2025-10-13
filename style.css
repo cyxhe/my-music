@@ -19,10 +19,11 @@ body{
     min-height: 100dvh;
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
     "top top"
-    "navbar main";
+    "navbar main"
+    "navbar bottom";
 }
 #topbar{
     grid-area: top;
@@ -37,6 +38,9 @@ body{
     }
     h1{
         color: var(--text-clr);
+    }
+    h1#titleAccent{
+        color: var(--accent-clr);
     }
 }
 #navbar{
@@ -72,4 +76,11 @@ main{
     #profile{
         width: 200px;
     }
+}
+#copyright{
+    grid-area: bottom;
+    box-sizing: border-box;
+    padding: 20px;
+    color: var(--text-clr);
+    text-align: center;
 }
