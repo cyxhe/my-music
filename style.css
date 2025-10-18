@@ -18,7 +18,7 @@ body{
     min-height: 100vh;
     min-height: 100dvh;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
     "top top"
@@ -80,20 +80,26 @@ main{
 .pageHeader{
     padding-bottom: 1em;
 }
+.videoTitle{
+    padding-bottom: 1em;
+}
 #contactList{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1em;
-    a{
+    li{
+        width: fit-content;
+        a{
         color: var(--text-clr);
-    }
-    span{
-        display: flex;
-        align-items: center;
-        gap: 0.5em;
-        svg{
-            fill: var(--text-clr);
+        }
+        span{
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            svg{
+                fill: var(--text-clr);
+            }
         }
     }
 }
