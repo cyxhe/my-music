@@ -80,6 +80,23 @@ main{
 .pageHeader{
     padding-bottom: 1em;
 }
+#contactList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    a{
+        color: var(--text-clr);
+    }
+    span{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        svg{
+            fill: var(--text-clr);
+        }
+    }
+}
 #copyright{
     grid-area: bottom;
     box-sizing: border-box;
