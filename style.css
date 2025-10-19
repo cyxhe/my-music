@@ -29,6 +29,9 @@ body{
     grid-area: top;
     box-sizing: border-box;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: var(--base-clr);
     border-bottom: 1px solid var(--line-clr);
     display: flex;
     gap: 1em;
@@ -47,7 +50,9 @@ body{
     grid-area: navbar;
     box-sizing: border-box;
     padding: 20px;
-    border-right: 1px solid var(--line-clr);
+    position: sticky;
+    top: 88.4px;
+    align-self: start;
     ul{
         list-style: none;
         li.active a{
@@ -72,6 +77,7 @@ main{
     grid-area: main;
     box-sizing: border-box;
     padding: 20px;
+    border-left: 1px solid var(--line-clr);
     color: var(--text-clr);
     #profile{
         display: flex;
@@ -112,6 +118,7 @@ main{
     grid-area: bottom;
     box-sizing: border-box;
     padding: 20px;
+    border-left: 1px solid var(--line-clr);
     font-size: 0.8em;
     color: var(--text-clr);
     text-align: center;
