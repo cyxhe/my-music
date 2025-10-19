@@ -112,6 +112,7 @@ main{
     grid-area: bottom;
     box-sizing: border-box;
     padding: 20px;
+    font-size: 0.8em;
     color: var(--text-clr);
     text-align: center;
 }
